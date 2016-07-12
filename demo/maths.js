@@ -5,10 +5,8 @@ window.maths = {
     return a + b;
   },
   power: (a, pow) => {
-    for (var i = 0; i < pow-1; i++) {
-      a *= a;
-    }
-    return a;
+
+    return Math.pow(a,pow);
   },
   div: (a, b) => {
     return a / c;
