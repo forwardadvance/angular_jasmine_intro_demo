@@ -1,4 +1,4 @@
-describe('Unit: helloService', function() {
+describe('HelloService', function() {
 
   beforeEach(module('app'));
 
@@ -11,5 +11,6 @@ describe('Unit: helloService', function() {
     spyOn(window, 'alert');
     helloService.sayHello();
     expect(window.alert).toHaveBeenCalledWith('hello');
+    expect(thundercats.getCats() instanceof Array).toBe(true);
   });
 });

@@ -14,7 +14,7 @@ angular.module('app', [])
     this.sayGoodbye = function() {
       alert('goodbye');
     };
-  })
+  });
 
 
 

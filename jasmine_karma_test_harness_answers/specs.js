@@ -9,7 +9,7 @@ describe('Maths', function() {
     });
     it('should be the case that infinity and infinity are infinity', function() {
       var infinity = 1 / 0;
-      expect(maths.sum(infinity,infinity)).toBe(infinity);
+      expect(maths.sum(infinity, infinity)).toBe(infinity);
     });
   });
 
