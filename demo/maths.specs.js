@@ -2,27 +2,27 @@
 
 'use strict';
 
-describe('working specs', () => {
-  it('should work', () => {
-    expect(true).toEqual(true)
+describe('working tests', () => {
+  it('works', () => {
+    expect({x:1}).toEqual({x:1});
   })
 })
 
 describe('Maths', () => {
-  describe('add', () => {
-    it('should be able to add numbers', () => {
-      expect( maths.add(1,1) ).toBe( 2 );
-      expect( maths.add(10,20) ).toBe( 30 );
-    })
-    it('should throw a NaN for undefined', () => {
-      expect( maths.add() ).toEqual( NaN );
-    })
-  })
+  describe('Maths.add', () => {
+    var value
+    beforeEach(() => {
+      value = maths.add(2,4)
+    });
 
-  describe('subtraction', () => {
-    it('should subtract two numbers', () => {
-      expect(maths.subtract(10, 3)).toBe(7);
-      expect(maths.subtract(1000, 500)).toBe(500);
+    it('adds numbers', () => {
+      expect(value).toBe(6)
+    });
+  })
+  describe('Maths.subtract', () => {
+    it('subtracts numbers', () => {
+      expect(maths.subtract(10,1)).toBe(9)
+      expect(maths.subtract(20,1)).toBe(19)
     })
   })
-})
+});
